@@ -1,18 +1,12 @@
 [core]
-    #透過する色を指定する。
+    Out     = AlphaOut
+
     red     = 237
     green   = 28
     blue    = 36
 
-    ##surface番号の開始番号を指定する。
     surface_start_num = 9000
-
-    ##surfaceのelement番号を指定する。
     element_num = 10
-
-    #アニメーションを表示時間を指定する。
-    animation_speed = 1
-
-    #アニメーション番号を指定する。
     animation_num = 0
+    animation_speed = 1
 

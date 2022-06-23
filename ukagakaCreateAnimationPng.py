@@ -7,7 +7,6 @@ from configparser import ConfigParser
 
 ##default
 CheckDirectory = "./AlphaIn"
-OutputDirectory = "AlphaOut"
 write_file = open('./surfaceXXXXX.txt', 'w' )
 config_path = "./config.txt"
 
@@ -19,6 +18,7 @@ core_section     = config[ 'core' ]
 red     = int( core_section[ 'red' ] )
 green   = int( core_section[ 'green' ] )
 blue    = int( core_section[ 'blue' ] )
+OutputDirectory = core_section[ 'Out' ]
 
 
 
@@ -43,7 +43,7 @@ if not os.path.exists( "./" + OutputDirectory ) :
 ##animation
 filelist = []
 filelist.append("surface.append0 {" + '\n' )
-filelist.append("\t" + str( animation_num ) + ".interval,sometimes" + '\n' )
+filelist.append("\tanimation" + str( animation_num ) + ".interval,sometimes" + '\n' )
 
 ##surfaceを定義
 surfaceX = []
