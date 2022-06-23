@@ -1,9 +1,9 @@
 [core]
     Out     = AlphaOut
 
-    red     = 237
-    green   = 28
-    blue    = 36
+    red     = 63
+    green   = 72
+    blue    = 204
 
     surface_start_num = 9000
     element_num = 10
