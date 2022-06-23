@@ -60,16 +60,16 @@ for file in ReadDirectory :
     animation_count = animation_count + 1
 
     img = cv2.imread( file , cv2.IMREAD_COLOR)
-    ch_r, ch_g, ch_b = cv2.split(img[:,:,:3])
+    ch_Blue, ch_Green, ch_Red = cv2.split(img[:,:,:3])
     #mask = np.zeros((img.shape[:3]), np.uint8)
     #mask = np.full( img.shape[:3] , 99 , np.uint8 )
     #指定色のマスクとして再構成する。
-    #ch_r, ch_g, ch_b = cv2.split(mask[:,:,:3])
-    #ch_r = np.full( ch_r.shape , color_R , np.uint8 )
+    #ch_Blue, ch_Green, ch_Red = cv2.split(mask[:,:,:3])
+    #ch_Blue = np.full( ch_Blue.shape , color_R , np.uint8 )
 
     #( blue  , green , red )
     ch_a = cv2.inRange(img, ( blue , green , red) , ( blue , green , red ) )
-    dst = cv2.merge((ch_r, ch_g, ch_b, cv2.bitwise_not(ch_a)))
+    dst = cv2.merge((ch_Blue, ch_Green, ch_Red, cv2.bitwise_not(ch_a)))
     cv2.imwrite( "./" + OutputDirectory + "/" + file_name , dst )
 
 
