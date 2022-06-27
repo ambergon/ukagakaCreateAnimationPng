@@ -77,7 +77,8 @@ MIT
 ambergon 
 [twitter](https://twitter.com/Sc_lFoxGon)
 
-
+#### 実用例
+[【伺か】Aviutlを使ってアニメーションファイルを作成しよう。 -- 異風堂々](https://ambergonslibrary.com/ukagaka/7384/)
 
 
 
